@@ -1,0 +1,9 @@
+entity XORget is
+  port( A : in STD_LOGIC;
+        B : in STD_LOGIC;
+        F : out STD_LOGIC );
+end XORget;
+architecture Behavioral of XORget is
+begin
+F <= A XOR B;
+end Behavioral;

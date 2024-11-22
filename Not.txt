@@ -1,0 +1,8 @@
+entity NOTget is
+  port( A : in STD_LOGIC;
+        F : out STD_LOGIC );
+end NOTget;
+architecture Behavioral of NOTget is
+begin
+F <= NOT A;
+end Behavioral;

@@ -1,0 +1,11 @@
+entity HALFAdd is
+  port( A : in STD_LOGIC;
+        B : in STD_LOGIC;
+        S : out STD_LOGIC;
+        C : out STD_LOGIC );
+end HALFAdd;
+architecture Behavioral of HALFAdd is
+begin
+  S <= A XOR B;
+  C <= A AND B;
+end Behavioral;

@@ -1,0 +1,9 @@
+entity ANDGET is
+  port( A : in STD_LOGIC;
+        B : in STD_LOGIC;
+        F : out STD_LOGIC );
+end ANDGET;
+architecture Behavioral of ANDGET is
+begin
+F <= A AND B;
+end Behavioral;

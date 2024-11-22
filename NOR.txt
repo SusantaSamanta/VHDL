@@ -1,0 +1,9 @@
+entity NORget is
+  port( A : in STD_LOGIC;
+        B : in STD_LOGIC;
+        F : out STD_LOGIC );
+end NORget;
+architecture Behavioral of NORget is
+begin
+F <= NOT (A OR B);
+end Behavioral;

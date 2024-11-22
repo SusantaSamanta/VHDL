@@ -1,0 +1,9 @@
+entity NANDget is
+  port( A : in STD_LOGIC;
+        B : in STD_LOGIC;
+        F : out STD_LOGIC );
+end NANDget;
+architecture Behavioral of NANDget is
+begin
+F <= NOT (A AND B);
+end Behavioral;

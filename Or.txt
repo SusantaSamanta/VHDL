@@ -1,0 +1,9 @@
+entity ORget is
+  port( A : in STD_LOGIC;
+        B : in STD_LOGIC;
+        F : out STD_LOGIC );
+end ORget;
+architecture Behavioral of ORget is
+begin
+F <= A OR B;
+end Behavioral;

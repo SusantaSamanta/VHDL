@@ -1,0 +1,34 @@
+entity name is
+port( A:in STD_LOGIC_VECTOR (3 downto 0);
+      B:in STD_LOGIC_VECTOR (3 downto 0);
+      C0:in STD_LOGIC;
+      S:out STD_LOGIC_VECTOR(3 downto 0);
+      C4:out STD_LOGIC );
+  end name;
+  architecture Behavioral of name is
+  signal C1,C2,C3,P0,P1,P2,P3,G0,G1,G2,G3: STD_LOGIC;
+  begin 
+  process(A, B, C0)
+  begin
+  C1 <= G0 OR (P0 AND C0);
+  G0 <= A(0) AND B(0);
+  P0 <= A(0) OR B(0);
+  S(0) <= A(0) XOR B(0) XOR C0;
+  
+  C2 <= G1 OR (P1 AND C1);
+  G1 <= A(1) AND B(1);
+  P1 <= A(1) OR B(1);
+  S(1) <= A(1) XOR B(1) XOR C1;
+  
+  C3 <= G2 OR (P2 AND C2);
+  G2 <= A(2) AND B(2);
+  P2 <= A(2) OR B(2);
+  S(2) <= A(2) XOR B(2) XOR C2;
+  
+  C4 <= G3 OR (P3 AND C3);
+  G3 <= A(3) AND B(3);
+  P3 <= A(3) OR B(3);
+  S(3) <= A(3) XOR B(3) XOR C3;
+  
+  end process;
+  end Behavioral;
